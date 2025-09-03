@@ -311,78 +311,138 @@
             color: var(--secondary);
         }
         
-        /* Expense Tracker Feature */
-        .expense-tracker {
+        /* Elite Computer Class Project */
+        .elite-project {
             padding: 5rem 0;
             background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
         }
         
-        .expense-content {
+        .elite-content {
             display: flex;
             align-items: center;
             gap: 3rem;
         }
         
-        .expense-text {
+        .elite-text {
             flex: 1;
         }
         
-        .expense-text h2 {
+        .elite-text h2 {
             font-size: 2.5rem;
             margin-bottom: 1.5rem;
         }
         
-        .expense-text p {
+        .elite-text p {
             color: var(--gray);
+            margin-bottom: 1.5rem;
+        }
+        
+        .elite-features {
+            list-style: none;
             margin-bottom: 2rem;
         }
         
-        .expense-features {
-            list-style: none;
-        }
-        
-        .expense-features li {
+        .elite-features li {
             margin-bottom: 1rem;
             display: flex;
             align-items: center;
         }
         
-        .expense-features li i {
+        .elite-features li i {
             color: var(--primary);
             margin-right: 1rem;
             font-size: 1.2rem;
         }
         
-        .expense-demo {
+        .elite-image {
             flex: 1;
-            background: white;
+            text-align: center;
+        }
+        
+        .elite-image img {
+            max-width: 100%;
             border-radius: 10px;
-            padding: 2rem;
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
         }
         
-        .expense-form {
+        /* Contact Section */
+        .contact {
+            padding: 5rem 0;
+            background-color: white;
+        }
+        
+        .contact-content {
             display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
             gap: 1rem;
         }
         
-        .form-group {
+        .contact-icon {
+            background: var(--primary);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
             display: flex;
-            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+        }
+        
+        .contact-details h4 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .contact-details p {
+            color: var(--gray);
+        }
+        
+        .contact-form {
+            background: #f8fafc;
+            padding: 2rem;
+            border-radius: 10px;
+        }
+        
+        .contact-form h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
         }
         
         .form-group label {
+            display: block;
             margin-bottom: 0.5rem;
             font-weight: 500;
         }
         
         .form-group input,
-        .form-group select,
         .form-group textarea {
+            width: 100%;
             padding: 0.8rem;
             border: 1px solid #ddd;
             border-radius: 5px;
             font-size: 1rem;
+        }
+        
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
         }
         
         /* Footer */
@@ -450,7 +510,7 @@
                 font-size: 2.5rem;
             }
             
-            .expense-content {
+            .elite-content {
                 flex-direction: column;
             }
             
@@ -471,7 +531,7 @@
                     <li><a href="#features">Features</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#team">Team</a></li>
-                    <li><a href="#expense-tracker">Expense Tracker</a></li>
+                    <li><a href="#elite-project">Elite Computer Class</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
                 <a href="#contact" class="btn">Get Started</a>
@@ -603,56 +663,99 @@
         </div>
     </section>
 
-    <!-- Expense Tracker Feature -->
-    <section class="expense-tracker" id="expense-tracker">
+    <!-- Elite Computer Class Project -->
+    <section class="elite-project" id="elite-project">
         <div class="container">
             <div class="section-title">
-                <h2>Expense Tracker Feature</h2>
-                <p>Our innovative expense tracking solution helps you manage contracts and expenses efficiently.</p>
+                <h2>Elite Computer Class Project</h2>
+                <p>An innovative educational platform developed by Codevora for modern computer learning.</p>
             </div>
-            <div class="expense-content">
-                <div class="expense-text">
-                    <h2>Smart Expense Management</h2>
-                    <p>Our expense tracker allows you to record all contract details, track expenses, and generate professional PDF reports with just a few clicks.</p>
-                    <ul class="expense-features">
-                        <li><i class="fas fa-check-circle"></i> Record contract details and expenses</li>
-                        <li><i class="fas fa-check-circle"></i> Categorize and organize expenses</li>
-                        <li><i class="fas fa-check-circle"></i> Generate detailed PDF reports</li>
-                        <li><i class="fas fa-check-circle"></i> Export data for accounting purposes</li>
-                        <li><i class="fas fa-check-circle"></i> Set budget limits and receive alerts</li>
+            <div class="elite-content">
+                <div class="elite-text">
+                    <h2>Revolutionizing Computer Education</h2>
+                    <p>Elite Computer Class is a comprehensive learning platform that includes both a website and Android application, designed to make computer education accessible to everyone.</p>
+                    <ul class="elite-features">
+                        <li><i class="fas fa-check-circle"></i> Interactive learning modules</li>
+                        <li><i class="fas fa-check-circle"></i> Live and recorded classes</li>
+                        <li><i class="fas fa-check-circle"></i> Progress tracking and certifications</li>
+                        <li><i class="fas fa-check-circle"></i> Student-teacher communication portal</li>
+                        <li><i class="fas fa-check-circle"></i> Assignment and assessment system</li>
                     </ul>
-                    <a href="#" class="btn">Learn More</a>
+                    <a href="#" class="btn">View Project</a>
                 </div>
-                <div class="expense-demo">
-                    <h3>Create Expense Record</h3>
-                    <form class="expense-form">
+                <div class="elite-image">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Elite Computer Class">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+                <p>Get in touch with us to discuss your project and how we can help bring your ideas to life.</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Address</h4>
+                            <p>123 Tech Street, Innovation City, IC 10101</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>info@codevora.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Working Hours</h4>
+                            <p>Monday - Friday: 9AM - 6PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <form>
                         <div class="form-group">
-                            <label for="contractName">Contract Name</label>
-                            <input type="text" id="contractName" placeholder="Enter contract name">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" placeholder="Enter your name">
                         </div>
                         <div class="form-group">
-                            <label for="contractDate">Date</label>
-                            <input type="date" id="contractDate">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" placeholder="Enter your email">
                         </div>
                         <div class="form-group">
-                            <label for="contractAmount">Amount</label>
-                            <input type="number" id="contractAmount" placeholder="Enter amount">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" placeholder="Enter subject">
                         </div>
                         <div class="form-group">
-                            <label for="contractCategory">Category</label>
-                            <select id="contractCategory">
-                                <option value="">Select category</option>
-                                <option value="development">Development</option>
-                                <option value="marketing">Marketing</option>
-                                <option value="operations">Operations</option>
-                                <option value="other">Other</option>
-                            </select>
+                            <label for="message">Your Message</label>
+                            <textarea id="message" placeholder="Enter your message"></textarea>
                         </div>
-                        <div class="form-group">
-                            <label for="contractDetails">Details</label>
-                            <textarea id="contractDetails" rows="3" placeholder="Enter contract details"></textarea>
-                        </div>
-                        <button type="submit" class="btn">Generate PDF</button>
+                        <button type="submit" class="btn">Send Message</button>
                     </form>
                 </div>
             </div>
@@ -660,18 +763,12 @@
     </section>
 
     <!-- Footer -->
-    <footer id="contact">
+    <footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
                     <h3>Codevora</h3>
                     <p>Transforming ideas into digital reality through exceptional web and mobile applications.</p>
-                </div>
-                <div class="footer-column">
-                    <h3>Contact Us</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> 123 Tech Street, Innovation City</p>
-                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
-                    <p><i class="fas fa-envelope"></i> info@codevora.com</p>
                 </div>
                 <div class="footer-column">
                     <h3>Quick Links</h3>
@@ -680,8 +777,18 @@
                         <li><a href="#features">Features</a></li>
                         <li><a href="#projects">Projects</a></li>
                         <li><a href="#team">Team</a></li>
-                        <li><a href="#expense-tracker">Expense Tracker</a></li>
+                        <li><a href="#elite-project">Elite Computer Class</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
                 </div>
             </div>
             <div class="copyright">
